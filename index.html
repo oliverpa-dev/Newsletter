@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <div id="container" class="newsletter">
+      <div class="newsletter__info">
+        <div class="newsletter__info-heading">
+          <h1>Stay updated!</h1>
+          <p>Join 60.000+ product managers receiving monthly updates on:</p>
+        </div>
+        <div class="newsletter__info-features">
+          <p>
+            <span class="newsletter__info-icon"
+              ><img src="./assets/images/icon-list.svg" alt="" /></span
+            >Product discovery and building what matters
+          </p>
+          <p>
+            <span class="newsletter__info-icon"
+              ><img src="./assets/images/icon-list.svg" alt="" /></span
+            >Measuring to ensure updates are a success
+          </p>
+          <p>
+            <span class="newsletter__info-icon"
+              ><img src="./assets/images/icon-list.svg" alt="" /></span
+            >And much more
+          </p>
+        </div>
+        <div class="newsletter__info-cta">
+          <div class="newsletter__info-label">
+            <label>Email address</label>
+            <label id="error-label" class="newsletter__info-label_state_error"
+              >Valid email required</label
+            >
+          </div>
+          <input id="input-text" type="email" placeholder="www.example@gm.co" />
+          <button id="button-submit">Subscribe to monthly newsletter</button>
+        </div>
+      </div>
+      <div class="newsletter__img">
+        <picture>
+          <source
+            srcset="./assets/images/illustration-sign-up-desktop.svg"
+            media="(min-width: 1400px)"
+          />
+          <source
+            srcset="./assets/images/illustration-sign-up-mobile.svg"
+            media="(max-width: 440px)"
+          />
+          <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" />
+        </picture>
+      </div>
+    </div>
+    <div id="container-success" class="newsletter-success">
+      <img src="./assets/images/icon-success.svg" alt="" />
+      <h1>Thanks for subscribing!</h1>
+      <p>
+        A confirmation email has been sent to
+        <strong id="success-info">ash@loremcomapny.com</strong> Please open it
+        and click the button inside to confirm your subscription.
+      </p>
+      <button id="success-button">Dismiss message</button>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
