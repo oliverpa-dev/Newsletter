@@ -17,3 +17,23 @@ $font-size-paragraph: 1.6rem;
 html {
   font-size: 62.5%;
 }
+
+body {
+  align-items: center;
+  background-color: $normal-state-color;
+  display: flex;
+  font-family: $font;
+  height: 100vh;
+  justify-content: center;
+}
+
+.newsletter {
+  align-items: center;
+  background-color: $white-color;
+  border-radius: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  max-width: 1400px;
+  padding: 2rem;
+}

@@ -2,4 +2,27 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  align-items: center;
+  background-color: hsl(234, 29%, 20%);
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  justify-content: center;
+}
+
+.newsletter {
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  max-width: 1400px;
+  padding: 2rem;
+}
+.newsletter__info {
+  background-color: hsl(4, 100%, 67%);
+}
+
 /*# sourceMappingURL=styles.css.map */
