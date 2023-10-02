@@ -1,0 +1,19 @@
+// Reusable styling properties
+
+// Colors
+$primary-color: hsl(4, 100%, 67%);
+$normal-state-color: hsl(234, 29%, 20%);
+$active-state-color: linear-gradient(to right, #f74242, hsl(4, 100%, 67%));
+$white-color: hsl(0, 0%, 100%);
+$grey-color: hsl(231, 7%, 60%);
+
+// Font faces and types
+$font: "Roboto", sans-serif;
+$font-weight-bold: "700";
+$font-weight-regular: "400";
+$font-size-paragraph: 1.6rem;
+
+// Newsletter
+html {
+  font-size: 62.5%;
+}
