@@ -185,6 +185,20 @@ body {
   }
 }
 
+// Styles for errors
+.error {
+  background-color: #f742426a;
+  border: 1px rgba(255, 0, 0, 0.807) solid;
+}
+
+.error::placeholder {
+  color: rgba(255, 0, 0, 0.754);
+}
+
+.visible {
+  display: inline-block;
+}
+
 @media screen and (max-width: $computer-display) {
   html {
     font-size: 55.5%;

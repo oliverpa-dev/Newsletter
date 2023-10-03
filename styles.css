@@ -133,6 +133,19 @@ body {
   transform: translateY(-0.1em);
 }
 
+.error {
+  background-color: rgba(247, 66, 66, 0.4156862745);
+  border: 1px rgba(255, 0, 0, 0.807) solid;
+}
+
+.error::placeholder {
+  color: rgba(255, 0, 0, 0.754);
+}
+
+.visible {
+  display: inline-block;
+}
+
 @media screen and (max-width: 960px) {
   html {
     font-size: 55.5%;
