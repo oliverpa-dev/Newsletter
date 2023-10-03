@@ -22,9 +22,7 @@ body {
   background-color: hsl(0, 0%, 100%);
   border-radius: 2rem;
   display: flex;
-  flex-wrap: wrap;
   gap: 5rem;
-  max-width: 1400px;
   padding: 2rem;
 }
 .newsletter__info {
@@ -133,6 +131,33 @@ body {
 .newsletter-success button:hover {
   background-image: linear-gradient(to right, #f74242, hsl(4, 100%, 67%));
   transform: translateY(-0.1em);
+}
+
+@media screen and (max-width: 960px) {
+  html {
+    font-size: 55.5%;
+  }
+  .newsletter {
+    border-radius: 0;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .newsletter__info {
+    padding: 0;
+  }
+  .newsletter__info-cta button {
+    display: inline;
+  }
+  .newsletter-success {
+    border-radius: 0;
+    height: 100vh;
+    justify-content: center;
+  }
+  .newsletter-success button {
+    margin-top: 5rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

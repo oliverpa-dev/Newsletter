@@ -16,6 +16,10 @@ $font-weight-bold: "700";
 $font-weight-regular: "400";
 $font-size-paragraph: 1.6rem;
 
+// Screens for responsiveness
+$computer-display: 960px;
+$mobile-display: 415px;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -41,9 +45,9 @@ body {
   background-color: $white-color;
   border-radius: 2rem;
   display: flex;
-  flex-wrap: wrap;
+  //   flex-wrap: wrap-reverse;
   gap: 5rem;
-  max-width: 1400px;
+  //   max-width: 1400px;
   padding: 2rem;
 
   &__info {
@@ -177,6 +181,39 @@ body {
     &:hover {
       background-image: $hover-state-color;
       transform: translateY(-0.1em);
+    }
+  }
+}
+
+@media screen and (max-width: $computer-display) {
+  html {
+    font-size: 55.5%;
+  }
+
+  .newsletter {
+    border-radius: 0;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column-reverse;
+    justify-content: center;
+
+    &__info {
+      padding: 0;
+      &-cta {
+        button {
+          display: inline;
+        }
+      }
+    }
+  }
+
+  .newsletter-success {
+    border-radius: 0;
+    height: 100vh;
+    justify-content: center;
+
+    button {
+      margin-top: 5rem;
     }
   }
 }
