@@ -8,6 +8,12 @@ const container = document.getElementById("container");
 const containerSuccess = document.getElementById("container-success");
 const email = document.getElementById("success-info");
 
+/**
+ * This function will accept input element from DOM
+ * and display appropriate styles based on its value
+ * @param {object} input
+ */
+
 const inputCheck = (input) => {
   //Checking if the input value is not empty
   var validRegex =
