@@ -4,4 +4,4 @@
 
 ## Welcome! 👋
 
-This is a challenge is taken from the FrontendMentor website. I used, JavaScript, SCSS and HTML to execute it.
+This is a challenge taken from the FrontendMentor website. I used, JavaScript, SCSS and HTML to execute it.
